@@ -12,6 +12,7 @@ const BlogPage = () => {
               title
               date
             }
+            excerpt
           }
         }
       }
@@ -27,6 +28,7 @@ const BlogPage = () => {
             <li key={index}>
               <h2>{edge.node.frontmatter.title}</h2>
               <p>{edge.node.frontmatter.date}</p>
+              <p>{edge.node.excerpt}</p>
             </li>
           )
         })}
